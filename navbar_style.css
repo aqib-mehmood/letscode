@@ -1,0 +1,114 @@
+.active{
+    background-color: teal;
+}
+
+#logo img{
+    width: 50px;
+    height: 45px;
+    float: left;
+}
+
+
+#navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+#navbar li{
+    float: left;
+    border-right: 1px solid springgreen;
+}
+#navbar li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 18px;
+    
+}
+
+#navbar li:last-child{
+    border-right: none;
+    background-color: hotpink;
+}
+
+
+#navbar li:hover:not(.active){
+    background-color: teal;
+    cursor: pointer;
+}
+
+#navbar ul li.right_float{
+    float: right;
+}
+
+
+/*Drop down menu start*/
+.drop_down{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.drop_down a {
+    color: black;
+    padding: 12px 2px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.drop:hover .drop_down{
+    display: block;
+    background-color: rgb(100, 149, 237);
+    
+}
+
+
+.drop_down a:hover{
+    background-color: black;
+}
+
+
+
+/*Drop down 2 menu start*/
+
+
+.drop_down2{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+
+.drop_down2 a {
+    color: black;
+    padding: 12px 2px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.drop_down a:nth-child(2):hover .drop_down2{
+    display: block;
+    background-color: rgb(100, 149, 237);
+    
+}
+
+
+.drop_down2 a:hover{
+    background-color: black;
+}
+
+
+
+
